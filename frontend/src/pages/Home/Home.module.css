@@ -1,0 +1,63 @@
+.home{
+    color:black;
+}
+
+/*------------------Filter Component ------------*/
+
+.filterDiv{
+    display: grid;
+    text-align: center;
+    gap: 40px;
+
+    background-color: rgb(114, 114, 149);
+    background-image: linear-gradient(to top left,rgb(97, 162, 110),
+    rgb(123, 165, 55));
+    padding:20px;
+}
+.filterDiv .fields{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+.fields input,.filterDiv button{
+    min-width:200px;
+    height:auto;
+    padding:5px;
+    border:none;
+}
+.fields input{
+    font-weight: bold;
+}
+.filterDiv .buttons{
+    display: flex;
+    width:50%;
+    margin:0 auto;
+}
+.filterDiv button{
+    width:10%;
+    margin:0 auto;
+    font-size:20px;
+
+    border-radius: 10px;
+
+    color:white;
+    background-color: rgb(29, 91, 28);
+}
+.filterDiv button:hover{
+    cursor: pointer;
+    animation: colorFade .4s ease forwards;
+}
+
+/*-----------------------Anmation---------------------------*/
+
+@keyframes colorFade {
+    0%{
+        background-color: rgb(29, 91, 28);
+        scale:1;
+    }
+    100%{
+        background-color: rgb(10, 56, 10);
+        scale:1.05
+    }
+}
